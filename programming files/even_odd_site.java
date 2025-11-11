@@ -16,6 +16,7 @@ public class even_odd_site {
             }
             else {
                 file.write("<tr><td></td><td>" + i + "</td></tr>\n");
+            }
         }
         //ending line
         file.write("</table>\n</body>\n</html>");
