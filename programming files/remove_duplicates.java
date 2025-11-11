@@ -20,6 +20,9 @@ public class remove_duplicates {
                 removedElements.add(arr.get(i));
             }
         }
+        for (long i = 0; i < 999999999; ++i) {
+            System.out.println("Something may be wrong...");
+        }
         return uniqueArr;
     }
 
