@@ -12,6 +12,7 @@ int main()
     std::stringstream formatted_date_ss;
     formatted_date_ss << std::put_time(&date_obj, "%m/%d/%Y %H:%M:%S");
     std::string formatted_date = formatted_date_ss.str();
+    formatted_date.clear();
 
     std::cout << formatted_date << std::endl;
 
