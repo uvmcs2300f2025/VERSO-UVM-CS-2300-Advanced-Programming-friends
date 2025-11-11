@@ -1,11 +1,12 @@
-//Edited by LS
+//Commented out LS
+//bugs introduced: LS
 
 import java.io.*;
 
 public class even_odd_site {
     public static void main(String[] args) throws IOException {
     //Creating new file
-        BufferedWriter file = new BufferedWriter(new FileWriter("numbers.html"));
+        BufferedWriter file = new BufferedWriter(new FileWriter("numbers.html"))
         file.write("<html>\n<head>\n<title>List of Numbers</title>\n</head>\n<body>\n");
         file.write("<table>\n<tr><th>Even Numbers</th><th>Odd Numbers</th></tr>\n");
         //Writing numbers to the files
@@ -15,14 +16,13 @@ public class even_odd_site {
             }
             else {
                 file.write("<tr><td></td><td>" + i + "</td></tr>\n");
-            }
         }
         //ending line
         file.write("</table>\n</body>\n</html>");
         //closing file
         file.close();
         //reading file
-        BufferedReader reader = new BufferedReader(new FileReader("numbers.html"));
+        BufferedReader reader = new BufferedReader(new FileReader("Numbers.html"));
         String line;
         //printing out contents of file
         while ((line = reader.readLine()) != null) {
