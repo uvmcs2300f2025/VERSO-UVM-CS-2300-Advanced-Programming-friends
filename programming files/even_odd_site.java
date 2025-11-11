@@ -22,7 +22,7 @@ public class even_odd_site {
         //closing file
         file.close();
         //reading file
-        BufferedReader reader = new BufferedReader(new FileReader("Numbers.html"));
+        BufferedReader reader = new BufferedReader(new FileReader("numbers.html"));
         String line;
         //printing out contents of file
         while ((line = reader.readLine()) != null) {
